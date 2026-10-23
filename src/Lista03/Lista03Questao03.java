@@ -1,5 +1,6 @@
 package Lista03;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lista03Questao03 {
@@ -22,8 +23,11 @@ public class Lista03Questao03 {
                 reprovado++;
             }
 
+            double media = Arrays.stream(vetor).sum() / vetor.length;
+
             System.out.println("total de aprovados" + aprovado);
             System.out.println("Total de reprovados" + reprovado);
+            System.out.println("Essa é o valor da media" + media);
         }
 
     }
